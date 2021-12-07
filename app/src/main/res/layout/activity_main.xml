@@ -23,7 +23,9 @@
             android:layout_height="wrap_content"
             android:text="REGISTRATION"
             android:textStyle="bold"
+            android:layout_gravity="center"
             android:textSize="40sp"
+            android:layout_marginBottom="40dp"
             android:textColor="@color/black"/>
 
 
@@ -31,15 +33,17 @@
             android:id="@+id/editEmail"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
-            android:hint="E-mail"
             android:ems="10"
+            android:hint="E-mail"
+            android:layout_marginBottom="8dp"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/editPass1"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword" />
@@ -48,7 +52,8 @@
             android:id="@+id/editPass2"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="Repeat password"
             android:inputType="textPassword" />
