@@ -64,6 +64,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="#2A4737"
-            android:text="Submit" />
+            android:text="Register" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
