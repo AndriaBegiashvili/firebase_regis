@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editPass2 : TextView
     private lateinit var button : Button
     private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+    private val emailPattern2 = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+\\.+[a-z]+"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             val editPas1 = editPass2.text.toString()
 
 
-            if (!(editEm.matches(emailPattern.toRegex()))){
+            if (!(editEm.matches(emailPattern.toRegex())) && !(editEm.matches(emailPattern2.toRegex()))){
                 editEmail.error = "Incorrect Email"
                 return@setOnClickListener
             }
