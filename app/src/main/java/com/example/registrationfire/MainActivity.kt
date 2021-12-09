@@ -45,11 +45,7 @@ class MainActivity : AppCompatActivity() {
             if (editPas.count()<9 || editPas.isEmpty()){
                 editPass1.error = "Enter Password"
                 return@setOnClickListener
-            }
-            if(editPas.isDigitsOnly()){
-                editPass1.error = "Must contain letters"
-                return@setOnClickListener
-            }
+            }       
             if (!(editPas.matches(".*[A-Z].*".toRegex())) && !(editPas.matches(".*[a-z].*".toRegex())) ){
                 editPass1.error = "Must contain letters"
                 return@setOnClickListener
