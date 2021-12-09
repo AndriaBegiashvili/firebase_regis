@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
             }
             if (!(editPas.matches(".*[$@#!?_].*".toRegex()))){
                 editPass1.error = "Must contain special symbols '$@#!?_'"
+                return@setOnClickListener
             }
             if (editPas1 != editPas){
                 editPass2.error = "Passwords don't match"
